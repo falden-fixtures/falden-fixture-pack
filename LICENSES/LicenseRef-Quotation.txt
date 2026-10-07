@@ -1,0 +1,5 @@
+Quoted, not licensed
+
+The files REUSE.toml marks with this identifier record what GitHub served when this pack's history was captured. They are published as evidence, so that every claim the pack makes from them can be checked.
+
+Falden, Inc. grants no license to them. Any right to copy them comes from the law on quotation and from the terms under which GitHub served them, not from Falden, Inc.
