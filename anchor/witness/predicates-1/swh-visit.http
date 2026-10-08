@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+Age: 0
+Allow: OPTIONS, OPTIONS, HEAD, GET
+Content-Length: 452
+Content-Type: application/json
+Cross-Origin-Opener-Policy: same-origin
+Date: Thu, 08 Oct 2026 05:33:32 GMT
+Referrer-Policy: same-origin
+Strict-Transport-Security: max-age=15768000;
+Vary: Accept, origin, Cookie
+Via: 1.1 varnish (Varnish/7.1)
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Ratelimit-Limit: 700
+X-Ratelimit-Remaining: 699
+X-Ratelimit-Reset: 1791437672
+X-Varnish: 461723820
+Connection: close
+
+{"origin":"https://github.com/falden-fixtures/falden-fixture-pack","visit":1,"date":"2026-10-08T05:33:27.582000+00:00","status":"full","snapshot":"fa67c2423e08e8b4e09bb4c72d15048bf7347fc0","type":"git","metadata":{},"origin_url":"https://archive.softwareheritage.org/api/1/origin/https://github.com/falden-fixtures/falden-fixture-pack/get/","snapshot_url":"https://archive.softwareheritage.org/api/1/snapshot/fa67c2423e08e8b4e09bb4c72d15048bf7347fc0/"}

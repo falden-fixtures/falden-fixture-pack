@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+Age: 0
+Allow: OPTIONS, GET, HEAD, OPTIONS
+Content-Length: 672
+Content-Type: application/json
+Cross-Origin-Opener-Policy: same-origin
+Date: Thu, 08 Oct 2026 05:33:33 GMT
+Referrer-Policy: same-origin
+Strict-Transport-Security: max-age=15768000;
+Vary: Accept, origin, Cookie
+Via: 1.1 varnish (Varnish/7.1)
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Ratelimit-Limit: 120
+X-Ratelimit-Remaining: 118
+X-Ratelimit-Reset: 1791441212
+X-Varnish: 467642621
+Connection: close
+
+{"id":"fa67c2423e08e8b4e09bb4c72d15048bf7347fc0","branches":{"HEAD":{"target":"refs/heads/main","target_type":"alias","target_url":"https://archive.softwareheritage.org/api/1/revision/3f02cc9bfdaf67fb1886dcf5413bae71eef99f1b/"},"refs/heads/main":{"target":"3f02cc9bfdaf67fb1886dcf5413bae71eef99f1b","target_type":"revision","target_url":"https://archive.softwareheritage.org/api/1/revision/3f02cc9bfdaf67fb1886dcf5413bae71eef99f1b/"},"refs/tags/anchor/predicates-1":{"target":"f352f1307ceda51007bc98a19e43bebfeb400faf","target_type":"release","target_url":"https://archive.softwareheritage.org/api/1/release/f352f1307ceda51007bc98a19e43bebfeb400faf/"}},"next_branch":null}

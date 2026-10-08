@@ -1,0 +1,52 @@
+HTTP/2 200 
+date: Thu, 08 Oct 2026 05:31:26 GMT
+content-type: application/json; charset=utf-8
+cache-control: public, max-age=60, s-maxage=60
+vary: Accept,Accept-Encoding, Accept, X-Requested-With
+etag: W/"ac5c41b2dbfce0a0f2c744b875cef21adf9803ca30750823d9eb98642584617f"
+last-modified: Thu, 08 Oct 2026 05:28:55 GMT
+x-github-media-type: github.v3; format=json
+x-github-api-version-selected: 2022-11-28
+access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning
+access-control-allow-origin: *
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-frame-options: deny
+x-content-type-options: nosniff
+x-xss-protection: 0
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+content-security-policy: default-src 'none'
+server: github.com
+accept-ranges: bytes
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 57
+x-ratelimit-used: 3
+x-ratelimit-resource: core
+x-ratelimit-reset: 1791441079
+content-length: 2633
+x-github-request-id: C4D7:336FB2:1C9890:5E225C:6AC72AAE
+x-github-edge-region: iad
+
+{
+  "node_id": "TA_kwDOU_DKlNoAKGYzNTJmMTMwN2NlZGE1MTAwN2JjOThhMTllNDNiZWJmZWI0MDBmYWY",
+  "sha": "f352f1307ceda51007bc98a19e43bebfeb400faf",
+  "url": "https://api.github.com/repos/falden-fixtures/falden-fixture-pack/git/tags/f352f1307ceda51007bc98a19e43bebfeb400faf",
+  "tagger": {
+    "name": "Falden",
+    "email": "release@falden.ai",
+    "date": "2026-10-08T05:22:49Z"
+  },
+  "object": {
+    "sha": "3f02cc9bfdaf67fb1886dcf5413bae71eef99f1b",
+    "type": "commit",
+    "url": "https://api.github.com/repos/falden-fixtures/falden-fixture-pack/git/commits/3f02cc9bfdaf67fb1886dcf5413bae71eef99f1b"
+  },
+  "tag": "anchor/predicates-1",
+  "message": "anchor/predicates-1\n\nAnchor #1 of the Falden fixture pack. anchor/predicates-1.manifest records the sha256 of each file on the pack's verdict path, of the error taxonomy, of capture format 1 and of the release and recovery public keys, under a first line naming the build commit it was prepared from. anchor/predicates-1.sig is the release key's signature over the manifest, in namespace falden-fixture-anchor. anchor/predicates-1.tsr (DigiCert) and anchor/predicates-1.tsr2 (GlobalSign) are RFC 3161 timestamp tokens over that signature.\n-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgRFuwKScIGjjnlRZoARTo9qGtGn\nX1KZ5VSv1RbZDdZYQAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQF9fsg5+dm2qdCre33UW9nlsQJFunXGEAqlSF4eaIh5OUx2Ek+NU05iXmFjFQC5sDN\nQ9TqoHIlg3Wrvk2kF1bgw=\n-----END SSH SIGNATURE-----\n",
+  "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgRFuwKScIGjjnlRZoARTo9qGtGn\nX1KZ5VSv1RbZDdZYQAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQF9fsg5+dm2qdCre33UW9nlsQJFunXGEAqlSF4eaIh5OUx2Ek+NU05iXmFjFQC5sDN\nQ9TqoHIlg3Wrvk2kF1bgw=\n-----END SSH SIGNATURE-----\n",
+    "payload": "object 3f02cc9bfdaf67fb1886dcf5413bae71eef99f1b\ntype commit\ntag anchor/predicates-1\ntagger Falden <release@falden.ai> 1791436969 -0400\n\nanchor/predicates-1\n\nAnchor #1 of the Falden fixture pack. anchor/predicates-1.manifest records the sha256 of each file on the pack's verdict path, of the error taxonomy, of capture format 1 and of the release and recovery public keys, under a first line naming the build commit it was prepared from. anchor/predicates-1.sig is the release key's signature over the manifest, in namespace falden-fixture-anchor. anchor/predicates-1.tsr (DigiCert) and anchor/predicates-1.tsr2 (GlobalSign) are RFC 3161 timestamp tokens over that signature.\n",
+    "verified_at": "2026-10-08T05:28:54Z"
+  }
+}
