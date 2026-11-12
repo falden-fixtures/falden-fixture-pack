@@ -1,0 +1,62 @@
+--- a/gen/cases_part3.py
++++ b/gen/cases_part3.py
+@@ -259,7 +259,10 @@
+         "config.protection_relaxed_during_period"],
+   silent=["population.change_partially_attributed",
+           "population.change_without_pull_request",
+-          "population.pr_link_disagreement"],
++          "population.pr_link_disagreement",
++          # REG-745 (D6.324): the silent control of commit-rode-along-unattributed's approval.none_at_merge,
++          # a push of a pull request the forge did not merge, as that one is, with an approval standing.
++          "approval.none_at_merge"],
+   co_fires=["approval.bypass_exempt_silent","config.protection_relaxed_during_period"],
+   assert_={"activity.activity_type": "push",
+            "change.pull_request_count": 1,
+@@ -294,14 +297,14 @@
+              "into it with --no-ff and pushes the merge commit straight to main. The pull request is "
+              "closed as merged by the push; the rider is in no pull request. Built beside "
+              "change-partially-attributed, in the same block of the calendar."),
++  # REG-745 (D6.324): approval.below_configured_minimum is true of this push with no slot, a shadow (notes).
+   fire=["population.change_partially_attributed",
+         "approval.none_at_merge",
+-        "approval.below_configured_minimum",
+         "approval.bypass_exempt_silent",
+         "config.protection_relaxed_during_period"],
+   silent=["population.change_without_pull_request",
+           "population.pr_link_disagreement"],
+-  co_fires=["approval.none_at_merge","approval.below_configured_minimum",
++  co_fires=["approval.none_at_merge",
+             "approval.bypass_exempt_silent","config.protection_relaxed_during_period"],
+   assert_={"activity.activity_type": "push",
+            "change.pull_request_count": 1,
+@@ -315,8 +318,9 @@
+     # The control pushed a local merge whose every commit attributes to its pull request.
+     "population.change_partially_attributed":
+       ("unattributed_commit_count", "change-partially-attributed"),
+-    "approval.none_at_merge": ("approval_count_at_merge_human", "below-configured-minimum"),
+-    "approval.below_configured_minimum": ("required_approving_review_count_at_merge", "none-at-merge"),
++    # REG-745 (D6.324): the same push without the rider, its pull request approved. A pull-request merge
++    # differs from this push on the merge path, which the predicate's tests read too.
++    "approval.none_at_merge": ("approval_count_at_merge_human", "change-partially-attributed"),
+     "approval.bypass_exempt_silent": ("rule_suite_pull_request_skipped", "none-at-merge"),
+     "config.protection_relaxed_during_period":
+       ("relaxations_in_period", "protection-raised-during-period"),
+@@ -328,9 +332,15 @@
+          "stays empty. Measured on a scratch repository before the freeze (REG-254 item 4): after a --no-ff "
+          "push of this shape the merge commit's and the branch commit's lookups returned the pull "
+          "request within a minute and the rider's stayed empty. The pull request had no approval, so "
+-         "approval.none_at_merge fires, and approval.below_configured_minimum with it, since the rule "
+-         "in force inside the bypass window asks for approvals; both are declared co-fires. "
+-         "change-partially-attributed is the silent control: the same push without the rider.")),
++         "approval.none_at_merge fires, a declared co-fire. change-partially-attributed is the silent "
++         "control of it and of the rider's condition: the same push without the rider, its pull request "
++         "approved. approval.below_configured_minimum is true of the push as well, since the rule in "
++         "force inside the bypass window asks for approvals, and it carries no slot (REG-745): its silent "
++         "control would have to be a push of a pull request the forge did not merge with as many "
++         "approvals as the rule asks for, and the history builds none, change-partially-attributed's "
++         "push falling short of the rule too. A pull-request merge differs from this push on the merge "
++         "path, which the condition's tests read, so the condition is a shadow here, true of the change "
++         "with no slot.")),
+ 
+ dict(
+   case_id="protected-ref-not-in-declared-set",

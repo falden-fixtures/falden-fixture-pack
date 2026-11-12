@@ -1,0 +1,5 @@
+{"reasons": [
+ {"path": "gen/cases_part3.py", "finding": "D6.324 (F10), P1, confirmed REG-735",
+  "found_in": "rehearsal R1 key, 5c minimal-pair check (FAL-311, 2026-11-06)",
+  "reason": "commit-rode-along-unattributed: approval.below_configured_minimum becomes a shadow of the 1.0 history, since no change of that history can be its silent control; approval.none_at_merge pairs with change-partially-attributed (REG-745, d12cf79)"}
+]}
