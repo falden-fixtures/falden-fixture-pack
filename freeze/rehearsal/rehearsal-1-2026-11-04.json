@@ -1,0 +1,24 @@
+{
+ "format": "falden-freeze-digest/1",
+ "journal": {
+  "format": "falden-journal/1",
+  "head": "b66328daa22e35d8dc6b234c9b96b8616db2c7000ce2429757996428fe67c30b",
+  "line": 2302,
+  "seq": 2301
+ },
+ "kind": "daily",
+ "label": "rehearsal-1-2026-11-04",
+ "pack_repository": "falden-fixtures/falden-fixture-pack-rehearsal",
+ "phase": "rehearsal",
+ "set": {
+  "files": 541,
+  "listing": "rehearsal-1-2026-11-04.sha256",
+  "manifest_sha256": "5e038da4c744e67bc80a83f8b5e41fb62b7b6d6bb3d5e4747bf2b93c8e88a4a1",
+  "sha256": "86a212b7b165ee5746de2d2f3bd05c6f6783f858cac929fde6b686377b9bb3d0"
+ },
+ "tokens": [
+  "rehearsal-1-2026-11-04.tsr",
+  "rehearsal-1-2026-11-04.tsr2"
+ ],
+ "utc_date": "2026-11-04"
+}

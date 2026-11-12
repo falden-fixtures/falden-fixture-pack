@@ -1,0 +1,29 @@
+{
+ "format": "falden-freeze-digest/1",
+ "journal": {
+  "format": "falden-journal/1",
+  "head": "bbe771c84b52d2aae30e0993c2b3014dd2df85cf466430709f46b5df4db71fac",
+  "line": 2824,
+  "seq": 2823
+ },
+ "key": {
+  "builder": "tools/rehearsal_build.py",
+  "built_from": "d12cf79c9fa510d13f4a8dd9e4ef34b2088f9c24",
+  "rehearsal_json_sha256": "19df433dc9bb4c37c536013a67dd9ea9ca357046adc7059af1563a40624dc913"
+ },
+ "kind": "rehearsal-key",
+ "label": "rehearsal-1-answers",
+ "pack_repository": "falden-fixtures/falden-fixture-pack-rehearsal",
+ "phase": "rehearsal",
+ "set": {
+  "files": 19,
+  "listing": "rehearsal-1-answers.sha256",
+  "manifest_sha256": null,
+  "sha256": "fc4671b996f69b33d4957643ce5f1110d0d9d1517506f2e7adbe75ede6395950"
+ },
+ "tokens": [
+  "rehearsal-1-answers.tsr",
+  "rehearsal-1-answers.tsr2"
+ ],
+ "utc_date": "2026-11-06"
+}
