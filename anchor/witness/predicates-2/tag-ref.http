@@ -1,0 +1,39 @@
+HTTP/2 200 
+date: Thu, 12 Nov 2026 06:04:01 GMT
+content-type: application/json; charset=utf-8
+cache-control: public, max-age=60, s-maxage=60
+vary: Accept,Accept-Encoding, Accept, X-Requested-With
+etag: W/"57386b35383ee0f0f94c1cc945f3c31a584f4d6b18a95f62c89727266885cf58"
+last-modified: Thu, 08 Oct 2026 05:35:36 GMT
+x-poll-interval: 300
+x-github-media-type: github.v3; format=json
+x-github-api-version-selected: 2022-11-28
+access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning
+access-control-allow-origin: *
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-frame-options: deny
+x-content-type-options: nosniff
+x-xss-protection: 0
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+content-security-policy: default-src 'none'
+server: github.com
+accept-ranges: bytes
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 58
+x-ratelimit-used: 2
+x-ratelimit-resource: core
+x-ratelimit-reset: 1794467036
+content-length: 448
+x-github-request-id: EBCD:2B5DE5:1EC21B1:61BF946:6AF556D1
+x-github-edge-region: iad
+
+{
+  "ref": "refs/tags/anchor/predicates-2",
+  "node_id": "REF_kwDOU_DKlL1yZWZzL3RhZ3MvYW5jaG9yL3ByZWRpY2F0ZXMtMg",
+  "url": "https://api.github.com/repos/falden-fixtures/falden-fixture-pack/git/refs/tags/anchor/predicates-2",
+  "object": {
+    "sha": "5e23c0ac194dfa42c44f57439cedfdf48064f738",
+    "type": "tag",
+    "url": "https://api.github.com/repos/falden-fixtures/falden-fixture-pack/git/tags/5e23c0ac194dfa42c44f57439cedfdf48064f738"
+  }
+}

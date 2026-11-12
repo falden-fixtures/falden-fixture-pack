@@ -1,0 +1,52 @@
+HTTP/2 200 
+date: Thu, 12 Nov 2026 06:04:01 GMT
+content-type: application/json; charset=utf-8
+cache-control: public, max-age=60, s-maxage=60
+vary: Accept,Accept-Encoding, Accept, X-Requested-With
+etag: W/"657cd22562c40c03149e502de33d9171d3048690cc2d910cdfe3a9167f24ea2b"
+last-modified: Thu, 08 Oct 2026 05:35:36 GMT
+x-github-media-type: github.v3; format=json
+x-github-api-version-selected: 2022-11-28
+access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning
+access-control-allow-origin: *
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-frame-options: deny
+x-content-type-options: nosniff
+x-xss-protection: 0
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+content-security-policy: default-src 'none'
+server: github.com
+accept-ranges: bytes
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 57
+x-ratelimit-used: 3
+x-ratelimit-resource: core
+x-ratelimit-reset: 1794467036
+content-length: 2827
+x-github-request-id: EBCE:318CC8:20AD671:67EB17B:6AF556D1
+x-github-edge-region: iad
+
+{
+  "node_id": "TA_kwDOU_DKlNoAKDVlMjNjMGFjMTk0ZGZhNDJjNDRmNTc0MzljZWRmZGY0ODA2NGY3Mzg",
+  "sha": "5e23c0ac194dfa42c44f57439cedfdf48064f738",
+  "url": "https://api.github.com/repos/falden-fixtures/falden-fixture-pack/git/tags/5e23c0ac194dfa42c44f57439cedfdf48064f738",
+  "tagger": {
+    "name": "Falden",
+    "email": "release@falden.ai",
+    "date": "2026-11-12T06:01:10Z"
+  },
+  "object": {
+    "sha": "317336fe489d2549292c6db6568a31d5d58a9083",
+    "type": "commit",
+    "url": "https://api.github.com/repos/falden-fixtures/falden-fixture-pack/git/commits/317336fe489d2549292c6db6568a31d5d58a9083"
+  },
+  "tag": "anchor/predicates-2",
+  "message": "anchor/predicates-2\n\nAnchor #2 of the Falden fixture pack, after the private rehearsal. anchor/predicates-2.manifest records what predicates-1 records, with the rehearsal record's files under freeze/rehearsal/, under a first line naming the build commit it was prepared from. anchor/predicates-2.diff is the change against predicates-1 and anchor/predicates-2.reasons.json gives one reason per changed file. anchor/predicates-2.sig is the release key's signature over the manifest, in namespace falden-fixture-anchor; anchor/predicates-2.tsr (DigiCert) and anchor/predicates-2.tsr2 (GlobalSign) are RFC 3161 tokens over that signature.\n-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgRFuwKScIGjjnlRZoARTo9qGtGn\nX1KZ5VSv1RbZDdZYQAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQD+O6Iow1NHbcIS263uz0CtDrl6EoITRrOkzdvkLdYtN1cbM+QtpFT0+eDJwPi4ptS\n8/4vsKCmlhUk0EoLNm7gc=\n-----END SSH SIGNATURE-----\n",
+  "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgRFuwKScIGjjnlRZoARTo9qGtGn\nX1KZ5VSv1RbZDdZYQAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQD+O6Iow1NHbcIS263uz0CtDrl6EoITRrOkzdvkLdYtN1cbM+QtpFT0+eDJwPi4ptS\n8/4vsKCmlhUk0EoLNm7gc=\n-----END SSH SIGNATURE-----\n",
+    "payload": "object 317336fe489d2549292c6db6568a31d5d58a9083\ntype commit\ntag anchor/predicates-2\ntagger Falden <release@falden.ai> 1794463270 -0500\n\nanchor/predicates-2\n\nAnchor #2 of the Falden fixture pack, after the private rehearsal. anchor/predicates-2.manifest records what predicates-1 records, with the rehearsal record's files under freeze/rehearsal/, under a first line naming the build commit it was prepared from. anchor/predicates-2.diff is the change against predicates-1 and anchor/predicates-2.reasons.json gives one reason per changed file. anchor/predicates-2.sig is the release key's signature over the manifest, in namespace falden-fixture-anchor; anchor/predicates-2.tsr (DigiCert) and anchor/predicates-2.tsr2 (GlobalSign) are RFC 3161 tokens over that signature.\n",
+    "verified_at": "2026-11-12T06:04:01Z"
+  }
+}

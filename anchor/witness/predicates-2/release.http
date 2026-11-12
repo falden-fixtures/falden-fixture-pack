@@ -1,0 +1,72 @@
+HTTP/2 200 
+date: Thu, 12 Nov 2026 06:04:01 GMT
+content-type: application/json; charset=utf-8
+cache-control: public, max-age=60, s-maxage=60
+vary: Accept,Accept-Encoding, Accept, X-Requested-With
+etag: W/"47287d600ecdb4a3f0e42b8a6aca54f97aa75c79dd4b17b3b9a0aba7c5444068"
+last-modified: Thu, 12 Nov 2026 06:03:52 GMT
+x-github-media-type: github.v3; format=json
+x-github-api-version-selected: 2022-11-28
+access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning
+access-control-allow-origin: *
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-frame-options: deny
+x-content-type-options: nosniff
+x-xss-protection: 0
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+content-security-policy: default-src 'none'
+server: github.com
+accept-ranges: bytes
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 56
+x-ratelimit-used: 4
+x-ratelimit-resource: core
+x-ratelimit-reset: 1794467036
+content-length: 3734
+x-github-request-id: EBCF:3C84AB:40D4AA7:CD5AEE7:6AF556D1
+x-github-edge-region: iad
+
+{
+  "url": "https://api.github.com/repos/falden-fixtures/falden-fixture-pack/releases/442554139",
+  "assets_url": "https://api.github.com/repos/falden-fixtures/falden-fixture-pack/releases/442554139/assets",
+  "upload_url": "https://uploads.github.com/repos/falden-fixtures/falden-fixture-pack/releases/442554139/assets{?name,label}",
+  "html_url": "https://github.com/falden-fixtures/falden-fixture-pack/releases/tag/anchor/predicates-2",
+  "id": 442554139,
+  "author": {
+    "login": "theruviparambil",
+    "id": 139271432,
+    "node_id": "U_kgDOCE0dCA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/139271432?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/theruviparambil",
+    "html_url": "https://github.com/theruviparambil",
+    "followers_url": "https://api.github.com/users/theruviparambil/followers",
+    "following_url": "https://api.github.com/users/theruviparambil/following{/other_user}",
+    "gists_url": "https://api.github.com/users/theruviparambil/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/theruviparambil/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/theruviparambil/subscriptions",
+    "organizations_url": "https://api.github.com/users/theruviparambil/orgs",
+    "repos_url": "https://api.github.com/users/theruviparambil/repos",
+    "events_url": "https://api.github.com/users/theruviparambil/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/theruviparambil/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "node_id": "RE_kwDOU_DKlM4aYNcb",
+  "tag_name": "anchor/predicates-2",
+  "target_commitish": "main",
+  "name": "Anchor #2: anchor/predicates-2",
+  "draft": false,
+  "immutable": true,
+  "prerelease": false,
+  "created_at": "2026-11-12T06:01:10Z",
+  "updated_at": "2026-11-12T06:03:52Z",
+  "published_at": "2026-11-12T06:03:52Z",
+  "assets": [
+
+  ],
+  "tarball_url": "https://api.github.com/repos/falden-fixtures/falden-fixture-pack/tarball/anchor/predicates-2",
+  "zipball_url": "https://api.github.com/repos/falden-fixtures/falden-fixture-pack/zipball/anchor/predicates-2",
+  "body": "Anchor #2 of the Falden fixture pack. The tag's tree holds:\n\n- `anchor/predicates-2.manifest`: the sha256 of each file on the pack's verdict path, of the error taxonomy, of capture format 1 and of the release and recovery public keys, under a first line naming the build commit it was prepared from\n- `anchor/predicates-2.sig`: the release key's signature over the manifest\n- `anchor/predicates-2.tsr` (DigiCert) and `anchor/predicates-2.tsr2` (GlobalSign): RFC 3161 timestamp tokens over that signature\n- `anchor/allowed_signers` and `anchor/tsa-ca.pem`: the signing keys, and both authorities' certificate chains\n- `anchor/predicates-2.diff` and `anchor/predicates-2.reasons.json`: the change against predicates-1 and one reason per changed file.\n- `freeze/rehearsal/`: the rehearsal record, each digest with two RFC 3161 tokens. The answer key's digest was timestamped on 2026-11-11, after the rehearsal.\n- `freeze/calendar/`: the live run's calendar as intent, with two RFC 3161 tokens over it.\n\nCheck the signature with stock OpenSSH:\n\n```\nssh-keygen -Y verify -f anchor/allowed_signers -I falden-fixture-release -n falden-fixture-anchor -s anchor/predicates-2.sig < anchor/predicates-2.manifest\n```\n\nCheck both timestamps with OpenSSL 3 (macOS's stock LibreSSL cannot verify GlobalSign's tokens):\n\n```\nopenssl ts -verify -in anchor/predicates-2.tsr -data anchor/predicates-2.sig -CAfile anchor/tsa-ca.pem\nopenssl ts -verify -in anchor/predicates-2.tsr2 -data anchor/predicates-2.sig -CAfile anchor/tsa-ca.pem\n```\n"
+}

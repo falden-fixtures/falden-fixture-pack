@@ -1,2 +1,4 @@
 f352f1307ceda51007bc98a19e43bebfeb400faf	refs/tags/anchor/predicates-1
 3f02cc9bfdaf67fb1886dcf5413bae71eef99f1b	refs/tags/anchor/predicates-1^{}
+5e23c0ac194dfa42c44f57439cedfdf48064f738	refs/tags/anchor/predicates-2
+317336fe489d2549292c6db6568a31d5d58a9083	refs/tags/anchor/predicates-2^{}
