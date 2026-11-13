@@ -1,0 +1,24 @@
+{
+ "format": "falden-freeze-digest/1",
+ "journal": {
+  "format": "falden-journal/1",
+  "head": "75f5be22051f742c0ea32f0bcafca4b45fe6bb12e3a7b1c5351380ad4d070891",
+  "line": 1907,
+  "seq": 1906
+ },
+ "kind": "daily",
+ "label": "regen-1-2026-11-13",
+ "pack_repository": "falden-fixtures/falden-fixture-pack",
+ "phase": "live",
+ "set": {
+  "files": 1275,
+  "listing": "regen-1-2026-11-13.sha256",
+  "manifest_sha256": "68b711e9da24992262a12fa2b73db4b9737acfa4fe5c87db911b50afb13dce8d",
+  "sha256": "db65b29b432196903336482087d2c02abd90f4b5a1ddf0688cfca08bea77b8cf"
+ },
+ "tokens": [
+  "regen-1-2026-11-13.tsr",
+  "regen-1-2026-11-13.tsr2"
+ ],
+ "utc_date": "2026-11-13"
+}
